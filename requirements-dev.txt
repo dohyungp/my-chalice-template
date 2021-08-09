@@ -1,0 +1,13 @@
+-r requirements.txt
+# linting
+isort==5.6.4
+black==21.7b0
+flake8==3.9.2
+pylint==2.9.3
+pre-commit==2.13.0
+
+# chalice dependency
+click>=7.1.2,<8.0
+
+# unittest
+pytest==6.*
