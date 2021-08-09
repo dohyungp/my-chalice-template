@@ -1,1 +1,2 @@
 iamport-rest-client
+pydantic>=1.8.2,<2.0
