@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  package:
+    image: public.ecr.aws/sam/build-python3.8
+    volumes:
+      - ./vendor:/app/vendor
+      - ./requirements-vendor.txt:/app/requirements-vendor.txt
+    command:
+      - /bin/bash
+      - -c
+      - "pip install -r /app/requirements-vendor.txt -t /app/vendor/"
